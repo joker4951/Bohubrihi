@@ -68,7 +68,6 @@ body {
 	background-color: #333;
 	color: #fff;
 	font: 300 14px/20px "Roboto","Open Sans", Helvetica, Arial, sans-serif;
-	height: 100vh;
 }
 
 .login {
@@ -76,6 +75,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
 }
 
 
