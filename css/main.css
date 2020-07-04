@@ -1,0 +1,339 @@
+/*
+  ========================================
+  Reset
+  ========================================
+*/
+
+/* This is to reset all the things inside the page */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	margin: 0;
+}
+
+/* 
+ ================================================
+ Custom Style
+ ================================================
+*/
+
+body {
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	font: 300 14px/20px "Roboto","Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.login {
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../imgs/mainBackground.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/* 
+ ================================================
+ Grid Styles
+*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.col-2, 
+.col-1 {
+	width: 50%;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	[class*="col-"] {
+    width: 100%;
+   	}
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+header {
+	margin: 10px;
+	background: #0000009e;
+	border-radius: 10px;
+	min-width: 300px;
+}
+
+.header {
+	padding: 10px;
+}
+
+.logo {
+	line-height: 50px;
+}
+
+.logo h1 {
+	display: inline-block;
+	padding-left: 10px;
+	font-weight: 500;
+	font-size: 34px;
+	font-style: italic;
+}
+
+.logo a {
+	color: #fff;
+}
+
+#boi {
+	color: #d44209;
+	font-weight: 700;
+	font-style: normal;
+}
+
+#logo {
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+/*
+  ========================================
+  Teaser
+  ========================================
+*/
+
+aside {
+	display: inline-block;
+	float: right;
+}
+
+.teaser {
+	margin: 100px auto; 
+	background: #000000b0;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 21px;
+	line-height: 30px;
+	text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+	.teaser {
+		margin: 10px auto;
+		font-size: 12px;
+	}
+}
+
+/*
+  ========================================
+  Form
+  ========================================
+*/
+
+main {
+	position: relative;
+	display: inline-block;
+	float: left; 
+}
+
+.loginform, .signupform {
+	position: absolute;
+	width: 70%;
+	margin: 20px 30px;
+	background: #000000b0;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.loginform {
+	display: block;
+}
+
+.signupform {
+	display: none;
+}
+
+.prompt {
+	text-align: center;
+	font-size: 16px;
+	margin: 5px auto;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.loginform, .signupform {
+		width: 95%;
+		margin: 10px auto;
+	}
+}
+
+
+legend {
+	line-height: 36px;
+	font-size: 24px;
+	margin: 10px auto;
+}
+
+form input {
+	display: inline-block;
+	width: 100%;
+	margin: 10px 0;
+	line-height: 36px;
+	border-color: #be7153;
+	border-radius: 5px;
+}
+
+form hr {
+	border-color: #999;
+}
+
+#fname , #lname {
+	width: 49%;
+}
+
+@media only screen and (max-width: 768px) {
+	#fname, #lname {
+		width: 100%;
+	}
+}
+
+.gender, .dob {
+	display: inline-block;
+	width: 48%;
+}
+
+.gender select {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	height: 42px;
+	border-color: #be7153;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.dob {
+	text-align: right;
+}
+
+.dob input {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	line-height: 36px;
+}
+
+#disclaimer {
+	text-align: center;
+	font-size: 9px;
+}
+
+form a {
+	color: #a6a6a6;
+}
+
+form a:hover {
+	color: #fff;
+}
+
+form .button {
+	background: #963;
+	color: #fff;
+	border-color: #fff;
+}
+
+#remember {
+	width: auto;
+}
+
+.remember, .forgot {
+	display: inline-block;
+	width: 49%;
+}
+
+.forgot {
+	text-align: right;
+}
